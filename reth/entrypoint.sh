@@ -10,6 +10,4 @@
     --ws \
     --authrpc.addr 0.0.0.0 \
     --authrpc.port 8551 \
-    --authrpc.jwtsecret /reth-data/jwt.hex \
-    --datadir=/reth-data \
-
+    --datadir=/reth-data
