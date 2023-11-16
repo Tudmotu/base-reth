@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  geth: # this is Optimism's geth client
+  reth: # this the op-reth client
     build: ./reth
     ports:
       - 8545:8545       # RPC
@@ -14,7 +14,7 @@ services:
   node:
     build: .
     depends_on:
-      - geth
+      - reth
     ports:
       - 7545:8545     # RPC
       - 9222:9222     # P2P TCP
